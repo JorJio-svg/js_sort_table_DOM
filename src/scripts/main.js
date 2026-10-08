@@ -12,8 +12,8 @@ tableHeaders.addEventListener('click', (e) => {
   switch (e.target.textContent) {
     case 'Name':
       trColection.sort((e1, e2) => {
-        const str1 = e1.textContent;
-        const str2 = e2.textContent;
+        const str1 = e1.cells[0].textContent;
+        const str2 = e2.cells[0].textContent;
 
         return str1.localeCompare(str2);
       });
